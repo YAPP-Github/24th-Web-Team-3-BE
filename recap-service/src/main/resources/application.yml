@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: recap-service
+
+ffmpeg:
+  path: ${FFMPEG_PATH}
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${NCP_ACCESS_KEY}
+      secret-key: ${NCP_SECRET_KEY}
+    stack:
+      auto: false
+    region:
+      static: kr-standard
+    s3:
+      endpoint: https://kr.object.ncloudstorage.com
+      bucket: ${NCP_BUCKET}
+
+recap:
+  path: ${RECAP_PATH}
